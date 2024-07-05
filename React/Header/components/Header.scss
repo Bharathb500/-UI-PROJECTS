@@ -1,0 +1,25 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    background: red;
+    padding: 10px;
+    img {
+        max-width: 50px;
+    }
+    .navbar {
+        display: flex;
+        gap: 10px;
+        @media(width<=500px) {
+            position: fixed;
+            left: -100%;
+            background: black;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            transition: all .5s;
+        }
+        &.expanded {
+            left: 0;
+        }
+    }
+}
