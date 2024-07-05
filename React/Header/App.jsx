@@ -1,8 +1,12 @@
 import Header from "./components/Header";
+import UseEffect from "./components/useEffect/UseEffect";
 
 function App() {
   return (
-    <Header/>
+    <>
+      <Header />
+      <UseEffect />
+    </>
   )
 }
 
