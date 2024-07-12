@@ -2962,25 +2962,47 @@ const router = (0, _reactRouterDom.createBrowserRouter)([
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appDefault.default), {}, void 0, false, {
             fileName: "index.js",
-            lineNumber: 6,
-            columnNumber: 58
+            lineNumber: 7,
+            columnNumber: 25
         }, undefined),
         errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
             children: "error occured"
         }, void 0, false, {
             fileName: "index.js",
-            lineNumber: 6,
-            columnNumber: 80
+            lineNumber: 7,
+            columnNumber: 48
+        }, undefined),
+        children: [
+            {
+                path: "/about",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                    children: "about"
+                }, void 0, false, {
+                    fileName: "index.js",
+                    lineNumber: 10,
+                    columnNumber: 22
+                }, undefined)
+            }
+        ]
+    },
+    {
+        path: "/contact",
+        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("b", {
+            children: "contact"
+        }, void 0, false, {
+            fileName: "index.js",
+            lineNumber: 13,
+            columnNumber: 33
         }, undefined)
     },
     {
-        path: "/b",
+        path: "/login",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("b", {
-            children: "bharath"
+            children: "login"
         }, void 0, false, {
             fileName: "index.js",
-            lineNumber: 6,
-            columnNumber: 125
+            lineNumber: 13,
+            columnNumber: 77
         }, undefined)
     }
 ]);
@@ -2989,7 +3011,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterP
     router: router
 }, void 0, false, {
     fileName: "index.js",
-    lineNumber: 8,
+    lineNumber: 15,
     columnNumber: 13
 }, undefined));
 
@@ -27255,17 +27277,25 @@ var _header = require("./components/Header");
 var _headerDefault = parcelHelpers.interopDefault(_header);
 var _useEffect = require("./components/useEffect/UseEffect");
 var _useEffectDefault = parcelHelpers.interopDefault(_useEffect);
+var _reactRouterDom = require("react-router-dom");
 function App() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "App.jsx",
-                lineNumber: 7,
+                lineNumber: 8,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _useEffectDefault.default), {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                id: "detail",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
+                    fileName: "App.jsx",
+                    lineNumber: 11,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
                 fileName: "App.jsx",
-                lineNumber: 8,
+                lineNumber: 10,
                 columnNumber: 7
             }, this)
         ]
@@ -27281,7 +27311,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/Header":"6nmoh","./components/useEffect/UseEffect":"lcaBO"}],"gkKU3":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/Header":"6nmoh","./components/useEffect/UseEffect":"lcaBO","react-router-dom":"9xmpe"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -27595,19 +27625,19 @@ parcelHelpers.export(exports, "navbar", ()=>navbar);
 const navbar = [
     {
         navtext: "Home",
-        navlink: "www.sab.com"
+        navlink: "/"
     },
     {
         navtext: "About us",
-        navlink: "www.sab.com"
+        navlink: "/about"
     },
     {
         navtext: "Contact us",
-        navlink: "www.sab.com"
+        navlink: "/contact"
     },
     {
         navtext: "login",
-        navlink: "www.sab.com"
+        navlink: "/login"
     }
 ];
 
@@ -27623,107 +27653,28 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-function Link({ href, text }) {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-        href: href,
+var _reactRouterDom = require("react-router-dom");
+function Links({ href, text }) {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+        to: href,
         children: text
     }, void 0, false, {
         fileName: "components/Link.jsx",
-        lineNumber: 5,
+        lineNumber: 6,
         columnNumber: 5
     }, this);
 }
-_c = Link;
-exports.default = Link;
+_c = Links;
+exports.default = Links;
 var _c;
-$RefreshReg$(_c, "Link");
+$RefreshReg$(_c, "Links");
 
   $parcel$ReactRefreshHelpers$f2c6.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"5kEQa":[function(require,module,exports) {
-module.exports = require("cc8e60728a7d6eff").getBundleURL("UckoE") + "upword.78ccd00a.png" + "?" + Date.now();
-
-},{"cc8e60728a7d6eff":"lgJ39"}],"lgJ39":[function(require,module,exports) {
-"use strict";
-var bundleURL = {};
-function getBundleURLCached(id) {
-    var value = bundleURL[id];
-    if (!value) {
-        value = getBundleURL();
-        bundleURL[id] = value;
-    }
-    return value;
-}
-function getBundleURL() {
-    try {
-        throw new Error();
-    } catch (err) {
-        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
-        if (matches) // The first two stack frames will be this function and getBundleURLCached.
-        // Use the 3rd one, which will be a runtime in the original bundle.
-        return getBaseURL(matches[2]);
-    }
-    return "/";
-}
-function getBaseURL(url) {
-    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
-}
-// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
-function getOrigin(url) {
-    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
-    if (!matches) throw new Error("Origin not found");
-    return matches[0];
-}
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-exports.getOrigin = getOrigin;
-
-},{}],"aIY9S":[function() {},{}],"lcaBO":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$bb46 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$bb46.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _s = $RefreshSig$();
-function UseEffect() {
-    _s();
-    const [first, setFirst] = (0, _react.useState)(0);
-    const clickHandler = ()=>{
-        setFirst(first + 1);
-    };
-    (0, _react.useEffect)(()=>{
-        console.log("component rendered first time");
-    }, []);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        onClick: clickHandler,
-        children: "UseEffect"
-    }, void 0, false, {
-        fileName: "components/useEffect/UseEffect.jsx",
-        lineNumber: 14,
-        columnNumber: 5
-    }, this);
-}
-_s(UseEffect, "cSuDlfPwkWjaMYL3BkwQp8pJGsc=");
-_c = UseEffect;
-exports.default = UseEffect;
-var _c;
-$RefreshReg$(_c, "UseEffect");
-
-  $parcel$ReactRefreshHelpers$bb46.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe"}],"9xmpe":[function(require,module,exports) {
 /**
  * React Router DOM v6.24.1
  *
@@ -34777,6 +34728,86 @@ function persistAppliedTransitions(_window, transitions) {
     }
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["km5uZ","1xC6H","bB7Pu"], "bB7Pu", "parcelRequire2cf7")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5kEQa":[function(require,module,exports) {
+module.exports = require("cc8e60728a7d6eff").getBundleURL("UckoE") + "upword.78ccd00a.png" + "?" + Date.now();
+
+},{"cc8e60728a7d6eff":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return "/";
+}
+function getBaseURL(url) {
+    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
+}
+// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error("Origin not found");
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"aIY9S":[function() {},{}],"lcaBO":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$bb46 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$bb46.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _s = $RefreshSig$();
+function UseEffect() {
+    _s();
+    const [first, setFirst] = (0, _react.useState)(0);
+    const clickHandler = ()=>{
+        setFirst(first + 1);
+    };
+    (0, _react.useEffect)(()=>{
+        console.log("component rendered first time");
+    }, []);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        onClick: clickHandler,
+        children: "UseEffect"
+    }, void 0, false, {
+        fileName: "components/useEffect/UseEffect.jsx",
+        lineNumber: 14,
+        columnNumber: 5
+    }, this);
+}
+_s(UseEffect, "cSuDlfPwkWjaMYL3BkwQp8pJGsc=");
+_c = UseEffect;
+exports.default = UseEffect;
+var _c;
+$RefreshReg$(_c, "UseEffect");
+
+  $parcel$ReactRefreshHelpers$bb46.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["km5uZ","1xC6H","bB7Pu"], "bB7Pu", "parcelRequire2cf7")
 
 //# sourceMappingURL=index.3d214d75.js.map

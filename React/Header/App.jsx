@@ -1,11 +1,15 @@
 import Header from "./components/Header";
 import UseEffect from "./components/useEffect/UseEffect";
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
     <>
       <Header />
-      <UseEffect />
+      {/* <UseEffect /> */}
+      <div id="detail">
+        <Outlet />
+      </div>
     </>
   )
 }

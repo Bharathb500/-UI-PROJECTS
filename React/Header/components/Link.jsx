@@ -1,9 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-function Link({href, text}) {
+function Links({href, text}) {
   return (
-    <a href={href}>{text}</a>
+    <Link to={href}>{text}</Link>
   )
 }
 
-export default Link
+export default Links
