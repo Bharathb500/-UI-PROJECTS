@@ -1,0 +1,23 @@
+@import url('../../styles/base.scss');
+
+footer {
+    min-height: 400px;
+    background: #333;
+        ul {
+            max-width: 1248px;
+            margin: auto;
+            display: flex;
+            gap: 5px;
+            a {
+                color: white;
+                text-decoration: none;
+                display: block;
+                &:hover {
+                    cursor: pointer;
+                    color: black;
+                    background-color: wheat;
+                }
+                padding: 10px;
+            }
+        }
+}

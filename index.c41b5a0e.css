@@ -1,0 +1,65 @@
+header {
+  background: #333;
+}
+
+header nav {
+  max-width: 1248px;
+  margin: auto;
+}
+
+header nav ul {
+  gap: 5px;
+  display: flex;
+}
+
+header nav ul a {
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+header nav ul a:hover {
+  cursor: pointer;
+  color: #000;
+  background-color: wheat;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+footer {
+  background: #333;
+  min-height: 400px;
+}
+
+footer ul {
+  gap: 5px;
+  max-width: 1248px;
+  margin: auto;
+  display: flex;
+}
+
+footer ul a {
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+footer ul a:hover {
+  cursor: pointer;
+  color: #000;
+  background-color: wheat;
+}
+
+.layout {
+  max-width: 1248px;
+  min-height: 500px;
+  margin: auto;
+}
+/*# sourceMappingURL=index.c41b5a0e.css.map */
