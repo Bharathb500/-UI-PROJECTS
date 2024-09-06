@@ -2971,74 +2971,74 @@ const root = document.getElementById("root");
 const rootElement = (0, _client.createRoot)(root);
 const router = (0, _reactRouterDom.createBrowserRouter)([
     {
-        path: "/",
+        path: "/-UI-PROJECTS/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appDefault.default), {}, void 0, false, {
             fileName: "index.js",
             lineNumber: 13,
-            columnNumber: 58
+            columnNumber: 71
         }, undefined),
         errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             children: "Errored!"
         }, void 0, false, {
             fileName: "index.js",
             lineNumber: 13,
-            columnNumber: 81
+            columnNumber: 94
         }, undefined),
         children: [
             {
-                path: "/",
+                path: "/-UI-PROJECTS/",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _layoutDefault.default), {
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homePageDefault.default), {}, void 0, false, {
                         fileName: "index.js",
                         lineNumber: 14,
-                        columnNumber: 33
+                        columnNumber: 46
                     }, undefined)
                 }, void 0, false, {
                     fileName: "index.js",
                     lineNumber: 14,
-                    columnNumber: 25
+                    columnNumber: 38
                 }, undefined)
             },
             {
-                path: "/about",
+                path: "/-UI-PROJECTS/about",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _layoutDefault.default), {
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutPageDefault.default), {}, void 0, false, {
                         fileName: "index.js",
                         lineNumber: 15,
-                        columnNumber: 38
+                        columnNumber: 51
                     }, undefined)
                 }, void 0, false, {
                     fileName: "index.js",
                     lineNumber: 15,
-                    columnNumber: 30
+                    columnNumber: 43
                 }, undefined)
             },
             {
-                path: "/contact",
+                path: "/-UI-PROJECTS/contact",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _layoutDefault.default), {
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactDefault.default), {}, void 0, false, {
                         fileName: "index.js",
                         lineNumber: 15,
-                        columnNumber: 98
+                        columnNumber: 124
                     }, undefined)
                 }, void 0, false, {
                     fileName: "index.js",
                     lineNumber: 15,
-                    columnNumber: 90
+                    columnNumber: 116
                 }, undefined)
             },
             {
-                path: "/services",
+                path: "/-UI-PROJECTS/services",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _layoutDefault.default), {
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _servicesPageDefault.default), {}, void 0, false, {
                         fileName: "index.js",
                         lineNumber: 15,
-                        columnNumber: 157
+                        columnNumber: 196
                     }, undefined)
                 }, void 0, false, {
                     fileName: "index.js",
                     lineNumber: 15,
-                    columnNumber: 149
+                    columnNumber: 188
                 }, undefined)
             }
         ]
@@ -27541,7 +27541,7 @@ function Header() {
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                            to: "/",
+                            to: "/-UI-PROJECTS",
                             children: "Home"
                         }, void 0, false, {
                             fileName: "src/components/Header/Header.jsx",
@@ -27555,7 +27555,7 @@ function Header() {
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                            to: "/about",
+                            to: "/-UI-PROJECTS/about",
                             children: "About"
                         }, void 0, false, {
                             fileName: "src/components/Header/Header.jsx",
@@ -27569,7 +27569,7 @@ function Header() {
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                            to: "/contact",
+                            to: "/-UI-PROJECTS/contact",
                             children: "Contact"
                         }, void 0, false, {
                             fileName: "src/components/Header/Header.jsx",
@@ -27583,7 +27583,7 @@ function Header() {
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                            to: "/services",
+                            to: "/-UI-PROJECTS/services",
                             children: "Services"
                         }, void 0, false, {
                             fileName: "src/components/Header/Header.jsx",
@@ -34768,7 +34768,7 @@ function Footer() {
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: "/",
+                        to: "/-UI-PROJECTS",
                         children: "Home"
                     }, void 0, false, {
                         fileName: "src/components/Footer/Footer.jsx",
@@ -34782,7 +34782,7 @@ function Footer() {
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: "/about",
+                        to: "/-UI-PROJECTS/about",
                         children: "About"
                     }, void 0, false, {
                         fileName: "src/components/Footer/Footer.jsx",
@@ -34796,7 +34796,7 @@ function Footer() {
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: "/contact",
+                        to: "/-UI-PROJECTS/contact",
                         children: "Contact"
                     }, void 0, false, {
                         fileName: "src/components/Footer/Footer.jsx",
@@ -34810,7 +34810,7 @@ function Footer() {
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: "/services",
+                        to: "/-UI-PROJECTS/services",
                         children: "Services"
                     }, void 0, false, {
                         fileName: "src/components/Footer/Footer.jsx",

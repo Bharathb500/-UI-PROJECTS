@@ -10,8 +10,8 @@ import ServicesPage from './src/pages/ServicesPage/ServicesPage';
 const root = document.getElementById('root')
 const rootElement = createRoot(root);
 
-const router = createBrowserRouter([{path: '/', element: <App />, errorElement: <div>Errored!</div>, children: [{
-    path: '/', element: <Layout><HomePage/></Layout>,
-}, {path: '/about', element: <Layout><AboutPage/></Layout>}, {path: '/contact', element: <Layout><Contact/></Layout>}, {path: '/services', element: <Layout><ServicesPage/></Layout>}]}])
+const router = createBrowserRouter([{path: '/-UI-PROJECTS/', element: <App />, errorElement: <div>Errored!</div>, children: [{
+    path: '/-UI-PROJECTS/', element: <Layout><HomePage/></Layout>,
+}, {path: '/-UI-PROJECTS/about', element: <Layout><AboutPage/></Layout>}, {path: '/-UI-PROJECTS/contact', element: <Layout><Contact/></Layout>}, {path: '/-UI-PROJECTS/services', element: <Layout><ServicesPage/></Layout>}]}])
 
 rootElement.render(<RouterProvider router={router} />)
